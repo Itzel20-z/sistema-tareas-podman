@@ -1,0 +1,121 @@
+* { box-sizing: border-box; }
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: #f4f5f7;
+  color: #1f2933;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #2563eb;
+  color: white;
+  padding: 1.2rem 2rem;
+}
+
+header h1 { margin: 0; font-size: 1.4rem; }
+
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+@media (max-width: 800px) {
+  main { grid-template-columns: 1fr; }
+}
+
+.formulario, .lista {
+  background: white;
+  border-radius: 10px;
+  padding: 1.2rem 1.4rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+form label {
+  display: block;
+  margin-top: 0.7rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #4b5563;
+}
+
+form input, form textarea, form select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.botones {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  padding: 0.55rem 1rem;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+#btn-guardar { background: #2563eb; color: white; }
+#btn-cancelar { background: #e5e7eb; color: #1f2933; }
+
+.filtros {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  text-align: left;
+  padding: 0.55rem 0.4rem;
+  border-bottom: 1px solid #eee;
+  font-size: 0.85rem;
+}
+
+.badge {
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: white;
+}
+
+.badge-pendiente { background: #f59e0b; }
+.badge-en_proceso { background: #3b82f6; }
+.badge-completada { background: #10b981; }
+
+.accion-btn {
+  background: none;
+  color: #2563eb;
+  font-size: 0.8rem;
+  padding: 0.2rem 0.4rem;
+}
+
+.accion-btn.eliminar { color: #dc2626; }
+
+.mensaje {
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+  min-height: 1.2rem;
+}
+
+.mensaje.error { color: #dc2626; }
+.mensaje.ok { color: #16a34a; }
