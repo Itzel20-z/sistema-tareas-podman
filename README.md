@@ -146,14 +146,11 @@ podman run -d --name tareas-frontend --network tareas-net \
 - [x] Eliminar una tarea.
 - [x] Probar los endpoints con `curl` / Postman.
 - [x] Verificar que los 3 contenedores levantan correctamente con `podman ps`.
-- [x] Verificar persistencia: los datos siguen ahí tras reiniciar el contenedor del backend.
+
 
 ## Capturas de pantalla
-
-_(Agregar aquí imágenes desde `docs/capturas/`, por ejemplo:)_
-
-`![Listado de tareas](docs/capturas/listado.png)`
+Verificar en la carpeta de docs
 
 ## Autor
 
-Nombre del estudiante — Proyecto Final, Microservicios / Aplicación Web Orientada a Servicios con Podman.
+Itzel — Proyecto Final, Microservicios / Aplicación Web Orientada a Servicios con Podman.
